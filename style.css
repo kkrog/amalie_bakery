@@ -123,3 +123,63 @@ header.topnav {
 .benefitspacer {
     margin: 2rem 1rem;
 }
+.offerings{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    background-color: lightsteelblue;
+}
+#ad {
+    width: 60%;
+    top: 1.8rem;
+    margin: 0 auto;
+    /*relook b/c need extra margin at bottom - just use nomtypes*/
+    background-image: url("./img/desktop/desktop-assets_0000s_0020_lukas-blazek-yGJd6kgmBCM-unsplash.jpg");
+    color: darkslategrey;
+    /*this box has an ellipticalish dropshadow*/
+}
+#ad h5 {
+    text-transform:uppercase;
+}
+#ad span{
+    font-weight:bold;
+}
+#ad h3 {
+    font-family:cursive;
+}
+#ad h4:hover {
+    color: green;
+}
+.nomtypes {
+    margin:3rem auto;
+    width: 40%;
+}
+#nomtypes {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    align-items:center;
+}
+#nomtypes a:hover {
+    /*color overlay orange*/
+}
+#nomoptions {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.nomoptions {
+    margin: 2rem 1rem;
+    background-color: #fff;
+}
+.nomoptions figcaption {
+    font-weight:bold;
+}
+.nomoptions span {
+    text-decoration: super;
+}
+.nomoptions h5 {
+    color:orange;
+    font-style:italic;
+}
