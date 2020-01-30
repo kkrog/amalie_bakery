@@ -2,8 +2,35 @@
     padding: 0;
     margin: 0;
 }
+html {
+    font-size: 10px;
+}
 body {
     font: Cookie, /*https://fonts.gstatic.com/s/cookie/v11/syky-y18lb0tSbf9kgqS.woff2*/;
     /*fix that*/
 }
-/*cd used a flexbox to control spacing/sizing of icon/text logo in header*/
+header figure {
+    float: left;
+}
+header h3 {
+    font-weight: bolder;
+    font-size: 2rem;
+}
+header span {
+    font-weight:normal;
+}
+header h5 {
+    color: orange;
+}
+header.topnav {
+    float:right;
+    text-transform: small-caps;
+}
+.topnav:hover {
+    text-decoration-color: orange;
+    /*cute pic that's hidden if no hover*/
+}
+.topshopnav:hover {
+    outline-color: #fff;
+    /*not quite what we want. review that video instruction*/
+}
