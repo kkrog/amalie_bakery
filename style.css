@@ -4,10 +4,17 @@
 }
 html {
     font-size: 10px;
+    color: #fff;
+    text-align: center;
 }
 body {
     font: Cookie, /*https://fonts.gstatic.com/s/cookie/v11/syky-y18lb0tSbf9kgqS.woff2*/;
     /*fix that*/
+}
+header{
+    min-height: 8%;
+    max-height: 12%;
+    top: 0px;
 }
 header figure {
     float: left;
@@ -27,10 +34,35 @@ header.topnav {
     text-transform: small-caps;
 }
 .topnav:hover {
-    text-decoration-color: orange;
+    color: orange;
     /*cute pic that's hidden if no hover*/
 }
 .topshopnav:hover {
     outline-color: #fff;
     /*not quite what we want. review that video instruction*/
+}
+.hero {
+    top: 8%;
+    width: 100%;
+    background-color: #000;
+    min-height:1500px;
+}
+.hero figure {
+    margin: auto;
+}
+.hero figcaption {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.hero h1 {
+    font-size: 3.6rem; 
+}
+.hero a {
+    font-size: 1.6rem;
+    padding: 3rem;
+    font-weight:bold;
+    text-decoration:none;
+}
+.hero a:hover {
+    color: orange;
 }
