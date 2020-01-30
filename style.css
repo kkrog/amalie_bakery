@@ -66,3 +66,29 @@ header.topnav {
 .hero a:hover {
     color: orange;
 }
+.specials {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content:center;
+    background-color: #fff;
+}
+.specials div {
+    background-color: darkslategrey;
+    width: 570px;
+    height: 350px;
+}
+/*don't forget to specify diff font treatments*/
+.specials h5 {
+    font-family: cursive, sans-serif;
+    font-size: 1rem;
+}
+.specials h3 {
+    font-size: 1.6rem;
+}
+.specials span {
+    color: green;
+}
+.specials h6 {
+    font-size: 0.8rem;
+}
