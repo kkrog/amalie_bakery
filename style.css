@@ -183,3 +183,17 @@ header.topnav {
     color:orange;
     font-style:italic;
 }
+.testimonial {
+    background-image: url("./img/desktop/desktop-assets_0000s_0033_brooke-lark-08bOYnH_r_E-unsplash.jpg");
+    color: #fff;
+}
+.testimonial h5 {
+    color: orange;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    margin: .5rem auto;
+}
+.testimonial h3 {
+    /*are there any h3 elements that DO NOT use this font family???*/
+    font-family: cursive;
+}
