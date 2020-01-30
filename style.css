@@ -3,6 +3,7 @@
     margin: 0;
 }
 body {
-    font: Cookie, https://fonts.gstatic.com/s/cookie/v11/syky-y18lb0tSbf9kgqS.woff2
+    font: Cookie, /*https://fonts.gstatic.com/s/cookie/v11/syky-y18lb0tSbf9kgqS.woff2*/;
     /*fix that*/
 }
+/*cd used a flexbox to control spacing/sizing of icon/text logo in header*/
