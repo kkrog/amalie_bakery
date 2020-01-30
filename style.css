@@ -72,9 +72,11 @@ header.topnav {
     justify-content: space-around;
     align-content:center;
     background-color: #fff;
+    padding: 3rem 0px;
 }
 .specials div {
     background-color: darkslategrey;
+    /*prolly replace with image instead & change opacity*/
     width: 570px;
     height: 350px;
 }
@@ -91,4 +93,33 @@ header.topnav {
 }
 .specials h6 {
     font-size: 0.8rem;
+}
+.hooks {
+    background-image: url("./img/desktop/desktop-assets_0000s_0031_lauren-mancke-sil2Hx4iupI-unsplash.jpg");
+    /*don't forget to spec where this image goes once you have a real pic*/
+    color: darkslategrey;
+}
+.hooks h5 {
+    color: orange;
+    /*comp has weird kerning*/
+}
+.hooks h3 {
+    font-size: 2rem;    
+}
+.hooks p {
+    padding: 1.6rem;
+}
+#benefits {
+    display:flex;
+    justify-content:space-between;
+    align-content:baseline;
+}
+.benefits {
+    margin: 2rem 1rem;
+}
+.benefits img {
+    margin: 0.2rem auto;
+}
+.benefitspacer {
+    margin: 2rem 1rem;
 }
