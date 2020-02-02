@@ -304,29 +304,51 @@ header h5 {
     margin:3rem auto;
     width: 40%;
 }
-#nomtypes {
-    display:flex;
-    flex-flow: row wrap;
-    justify-content:center;
-    align-items:center;
+.nomtypes h5 {
+    color: orange;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 300;
+    font-size: 1.25rem;
 }
-#nomtypes a:hover {
-    /*color overlay orange*/
+.nomtypes h3 {
+    color: rgb(24,24,24);
+    font-family: 'Tangerine',cursive;
+    font-size: 5rem;
+    font-weight: 700;
+    line-height:1.5;
+}
+#nomtypes {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+#nomtypes button {
+    width: 4rem;
+    height: 4rem;
+    overflow: wrap;
+    border-radius: 10%;
+    margin: .25rem .25rem;
+}
+#nomtypes button:hover {
+    background-color: orange;
 }
 #nomoptions {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
-.nomoptions {
+.nomoptions figure{
     margin: 2rem 1rem;
-    background-color: #fff;
+    background-color: rgb(239,243,244);
 }
 .nomoptions figcaption {
     font-weight:bold;
 }
-.nomoptions span {
-    text-decoration: super;
+.TM {
+    vertical-align: super;
+    font-size: smaller;
 }
 .nomoptions h5 {
     color:orange;
