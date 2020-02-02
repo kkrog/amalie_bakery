@@ -3,10 +3,19 @@
     margin: 0;
 }
 @font-face {
-    font-family: 'Cookie';
+    font-family: 'Satisfy';
     font-style: normal;
     font-weight: 400;
-    src: local('Cookie-Regular'), url(https://fonts.gstatic.com/s/cookie/v11/syky-y18lb0tSbf9kgqS.woff2) format('woff2');
+    font-display: swap;
+    src: local('Satisfy Regular'), local('Satisfy-Regular'), url(https://fonts.gstatic.com/s/satisfy/v10/rP2Hp2yn6lkG50LoCZOIHQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: 'Tangerine';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Tangerine Regular'), local('Tangerine-Regular'), url(https://fonts.gstatic.com/s/tangerine/v11/IurY6Y5j_oScZZow4VOxCZZM.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
@@ -15,42 +24,42 @@
     font-weight: 200;
     src: url(https://fonts.gstatic.com/s/oswald/v29/TK3iWkUHHAIjg752GT8G.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
-  @font-face {
+}
+@font-face {
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 300;
     src: url(https://fonts.gstatic.com/s/oswald/v29/TK3iWkUHHAIjg752GT8G.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
-  @font-face {
+}
+@font-face {
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 400;
     src: url(https://fonts.gstatic.com/s/oswald/v29/TK3iWkUHHAIjg752GT8G.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
-  @font-face {
+}
+@font-face {
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 500;
     src: url(https://fonts.gstatic.com/s/oswald/v29/TK3iWkUHHAIjg752GT8G.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
-  @font-face {
+}
+@font-face {
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 600;
     src: url(https://fonts.gstatic.com/s/oswald/v29/TK3iWkUHHAIjg752GT8G.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
-  @font-face {
+}
+@font-face {
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 700;
     src: url(https://fonts.gstatic.com/s/oswald/v29/TK3iWkUHHAIjg752GT8G.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
+}
 html {
     font-size: 16px;
     color: #fff;
@@ -62,64 +71,101 @@ body {
 header{
     top: 0px;
     background-color: #000;
-    height: 5rem;
+    min-height: 3.5rem;
+    position: fixed;
+    width: 100%;
+    display:flex;
+    justify-content:space-between;
 }
 header figure {
-    float: left;
     display: flex;
     justify-content: left;
     text-align:left;
 }
 header figure img {
-    height: 4rem;
-    margin-right: 0.5rem;
+    height: 3rem;
+    margin:0.5rem;
 }
 header h3 {
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2rem;
+    line-height: 1.1;
+    letter-spacing: 0.05rem;
+    margin-top:0.4rem;
 }
 header span {
     font-weight:200;
 }
 header h5 {
     color: orange;
-    font-size: 1rem;
+    font-size: .9rem;
+    font-weight:300;
+    letter-spacing: .2rem;
+    line-height: 1;
 }
-header.topnav {
-    float:right;
+.topnav {
     text-transform: small-caps;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top:1rem;
 }
-.topnav:hover {
+.topshopnav {
+    display:inline-block;
+    margin:0 0.25rem;
+}
+.topmainnav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 .5rem;
+}
+.topshopnav i {
+    color: #fff;
+    margin: 0 .5rem;
+}
+.topnav a:hover {
     color: orange;
-    /*cute pic that's hidden if no hover*/
 }
-.topshopnav:hover {
-    outline-color: #fff;
-    /*not quite what we want. review that video instruction*/
+.topshopnav i:hover {
+    color: orange;
 }
 .hero {
-    top: 8%;
+    top: 5rem;
     width: 100%;
-    background-color: #000;
-    min-height:1500px;
-    background-image: url("./img/new/hero.jpg")
+    background-image: url("./img/new/hero.jpg");
+    background-size: cover;
+    min-height: 50rem;
 }
 .hero figure {
-    margin: auto;
+    padding-top:10rem;
+}
+.hero figure img {
+    max-width: 200px;
 }
 .hero figcaption {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
+    font-weight: 300;
+    line-height: 2;
 }
 .hero h1 {
     font-size: 6rem;
-    font-family: 'Cookie','cursive';
+    font-family: 'Tangerine','cursive';
+    font-weight: lighter;
+}
+/*maybe put back satisfy*/
+.hero p {
+    max-width: 45%;
+    margin: 2rem auto;
+    font-weight: normal;
 }
 .hero a {
+    display: block;
     font-size: 1.6rem;
-    padding: 3rem;
-    font-weight:bold;
+    margin: 5rem auto;
+    font-weight: 500;
     text-decoration: none;
+    color: #fff;
 }
 .hero a:hover {
     color: orange;
@@ -133,10 +179,11 @@ header.topnav {
     padding: 3rem 0px;
 }
 .specials div {
-    background-color: darkslategrey;
-    /*prolly replace with image instead & change opacity*/
     width: 570px;
     height: 350px;
+    background-image: url('./img/new/rctflour.jpg');
+    background-size: cover;
+    opacity: 80%;
 }
 /*don't forget to specify diff font treatments*/
 .specials h5 {
@@ -255,3 +302,6 @@ header.topnav {
     /*are there any h3 elements that DO NOT use this font family???*/
     font-family: cursive;
 }
+
+
+/*breakpoint for hero width 772px*/
