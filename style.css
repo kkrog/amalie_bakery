@@ -170,7 +170,7 @@ header h5 {
 .hero a:hover {
     color: orange;
 }
-.specials {
+#specials {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -178,55 +178,85 @@ header h5 {
     background-color: #fff;
     padding: 3rem 0px;
 }
-.specials div {
+.specials {
     width: 570px;
     height: 350px;
-    background-image: url('./img/new/rctflour.jpg');
-    background-size: cover;
-    opacity: 80%;
+    line-height: 1.5;
+    margin: 1rem 0;
 }
-/*don't forget to specify diff font treatments*/
-.specials h5 {
-    font-family: cursive, sans-serif;
-    font-size: 1rem;
+#monthlyspcl {
+    background-color: rgba(255,255,255,.75);
+    background-image: url('./img/new/cookiesa.jpg');
+    background-blend-mode: overlay;
+    background-size: cover;
+    color: rgb(24,24,24);
+}
+#newspcl {
+    background-color: rgba(255,255,255,.75);
+    background-image: url('./img/new/cookiesb.jpg');
+    background-blend-mode: overlay;
+    background-size: cover;
+    color: rgb(24,24,24);
+}
+.specials h4 {
+    font-size: 2.5rem;
+    margin-top: 3.5rem;
+    font-weight:300;
+    font-style: italic;
 }
 .specials h3 {
-    font-size: 1.6rem;
+    font-size: 4rem;
+    font-weight: 500;
 }
 .specials span {
-    color: green;
+    color: rgb(135,166,34);
 }
 .specials h6 {
-    font-size: 0.8rem;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    line-height:2.5;
 }
 .hooks {
-    background-image: url("./img/desktop/desktop-assets_0000s_0031_lauren-mancke-sil2Hx4iupI-unsplash.jpg");
-    /*don't forget to spec where this image goes once you have a real pic*/
-    color: darkslategrey;
+    background-image: url("./img/new/cookiespana.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-color: rgb(239,243,244);
+    background-blend-mode: darken;
+    color: rgb(24,24,24);
+    width: 100%;
 }
 .hooks h5 {
     color: orange;
     /*comp has weird kerning*/
+    padding-top: 2rem;
+    font-weight:300;
+    letter-spacing: .1rem;
+    font-size: 1.25rem;
 }
 .hooks h3 {
-    font-size: 2rem;    
+    font-size: 5rem;
+    font-family: 'Tangerine',cursive;  
+    line-height: 1.5;
 }
 .hooks p {
     padding: 1.6rem;
+    width: 60%;
+    margin: 0 auto;
 }
 #benefits {
     display:flex;
-    justify-content:space-between;
+    justify-content:space-around;
     align-content:baseline;
 }
 .benefits {
     margin: 2rem 1rem;
+    background-color: rgba(255,255,255,.8)
 }
 .benefits img {
-    margin: 0.2rem auto;
-}
-.benefitspacer {
-    margin: 2rem 1rem;
+    margin: 0.5rem auto;
 }
 .offerings{
     display: flex;
@@ -305,3 +335,18 @@ header h5 {
 
 
 /*breakpoint for hero width 772px*/
+/*hooks bgimg acts weird below 1268...maybe need constrain section max-height/overflow*/
+/*benefits p hide under ___ wide and click reveal*/
+@media only screen and (max-width:1267px) {
+    .hooks {
+        background-image: url("./img/new/cookiespanb.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: bottom;
+        background-color: rgb(239,243,244);
+        background-blend-mode: darken;
+        color: rgb(24,24,24);
+        width: 100%;
+    }
+}
