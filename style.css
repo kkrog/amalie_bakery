@@ -574,17 +574,21 @@ header h5 {
     background-color: rgba(24,24,24,0.6);
     background-blend-mode: darken;
     text-align: left;
-    padding-left: 15%;
+    padding-left: 10%;
     width: 100%;
     min-height: 500px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
 }
 .location #location {
-    float: left;
-    max-width: 45%;
+    width: 45%;
 }
-.location iframe {
-    float: right;
-    max-width: 45%;
+.location #mapwrap {
+    width: 45%;
+}
+#mapwrap iframe {
+    vertical-align: bottom;
 }
 .location h5 {
     color: orange;
@@ -600,7 +604,25 @@ header h5 {
     font-weight:600;
     line-height:1.3;
 }
-
+.location p {
+    max-width: 80%;
+}
+.location thead {
+    visibility: hidden;
+}
+.licon {
+    padding: 1rem 1rem 1rem 0;
+}
+.linfo {
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: rgba(255,255,255,.7);
+}
+.linfo span {
+    font-weight: 600;
+    color: rgba(255,255,255,1);
+}
 /*breakpoint for hero width 772px*/
 /*benefits p hide under ___ wide and click reveal*/
 @media only screen and (max-width:1267px) {
@@ -614,5 +636,35 @@ header h5 {
         background-blend-mode: darken;
         color: rgb(24,24,24);
         width: 100%;
+    }
+}
+@media only screen and (min-width:930px) and (max-width:1204px) {
+    #ad {
+        width: 60%;
+        height: 10rem;
+        top: 3rem;
+        margin: 0 auto;
+        background-image: url("./img/new/pavloval.jpg");
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: rgb(32,41,46);
+        background-blend-mode: lighten;
+        box-shadow: 0 .2rem .4rem rgb(32,41,46);
+    }
+    #ad h5,h4,h3 {
+        margin-left: 30%;
+    }
+}
+@media only screen and (max-width: 929px) {
+    #ad {
+        /*should update this to use single darkened image?*/
+        width: 60%;
+        height: 10rem;
+        top: 3rem;
+        margin: 0 auto;
+        background-color: rgb(32,41,46);
+        background-image: none;
+        box-shadow: 0 .2rem .4rem rgb(32,41,46);
     }
 }
