@@ -330,6 +330,7 @@ header h5 {
     overflow: wrap;
     border-radius: 10%;
     margin: .25rem .25rem;
+    background-color: rgb(239,243,244)
 }
 #nomtypes button:hover {
     background-color: orange;
@@ -338,21 +339,31 @@ header h5 {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    margin: 0 auto;
 }
 .nomoptions figure{
     margin: 2rem 1rem;
     background-color: rgb(239,243,244);
+    height: 14rem;
+    width: 12rem;
+}
+.nomoptions img {
+    height: 50%;
+    margin:1rem auto;
+    mix-blend-mode: multiply;
 }
 .nomoptions figcaption {
     font-weight:bold;
+    color: rgb(24,24,24);
 }
 .TM {
     vertical-align: super;
     font-size: smaller;
 }
-.nomoptions h5 {
+.nomoptions figure h5 {
     color:orange;
     font-style:italic;
+    margin-bottom: 1rem;
 }
 .testimonial {
     background-image: url("./img/desktop/desktop-assets_0000s_0033_brooke-lark-08bOYnH_r_E-unsplash.jpg");
