@@ -405,22 +405,96 @@ header h5 {
     text-transform: uppercase;
     font-size: 1.5rem;
     font-weight: 400;
-    margin: 0.2rem auto;
     letter-spacing: 0.2rem;
     line-height: 1.1;
+    padding-top: 1rem;
 }
 .slider h6 {
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: 200;
     letter-spacing: 0.2rem;
-    margin: 0.2rem auto;
+    padding-bottom: 1rem;
     color: orange;
     line-height: 1.1;
 
 }
 #slide2 {
     display: none;
+}
+.blog h5 {
+    font-weight: 300;
+    font-size: 1.25rem;
+    letter-spacing: .2rem;
+    line-height: 1.5;
+    color: orange;
+    text-transform: uppercase;
+    margin-top: 3rem;
+}
+.blog h3 {
+    font-family: 'Tangerine', cursive;
+    font-size: 5rem;
+    color: rgb(24,24,24);
+    font-weight: 600;
+}
+#blogsnippets {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    margin-top:1rem;
+}
+.blogsnippets {
+    display: flex;
+    justify-content: left;
+    width: 20rem;
+}
+.blogsnippets .month {
+    color: rgb(24,24,24);
+    opacity: 0.3;
+    border-right: 1px solid rgb(24,24,24);
+    height:4.75rem;
+    padding-right: 1rem;
+    margin-right: 1rem;
+}
+.month h4 {
+    font-family: 'Tangerine', cursive;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.month h6 {
+    font-size: .8rem;
+    font-weight: 300;
+}
+.artsnip h5 {
+    min-height: 3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0px 0px;
+    text-align:left;
+    padding: 0;
+    color: rgb(24,24,24);
+}
+.artsnip p {
+    color: rgb(24,24,24);
+    text-align: left;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    line-height: 1;
+    font-weight: 300;
+    max-width:85%;
+}
+.artsnip h6{
+    text-align: left;
+    text-transform:uppercase;
+    line-height: 3;
+}
+.artsnip a{
+    text-decoration: none;
+    color: rgb(24,24,24);
+}
+.artsnip a:hover{
+    color: orange;
 }
 
 
