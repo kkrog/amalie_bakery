@@ -33,7 +33,7 @@
             </nav>
         </div>
     </header>
-    <section class="hero">
+    <section class="hero" id="#home">
         <figure>
             <img src="./img/new/wheatfan.png" alt="wheat icon">
             <figcaption>BAKED FRESH STORE</figcaption>
@@ -54,7 +54,7 @@
             <h6>+20% Off for new members, Sign up now</h6>
         </div>
     </section>
-    <section class="hooks">
+    <section class="hooks" id="about">
         <h5>serving you since 1988</h5>
         <h3>Welcome to Amalie's Bakery</h3>
         <p>We are proud to say that Amalie's Store offers all of your bakery favorites. All of which are locally owned and operated. Cakes de Fleur, Stoneground Bakery, and Cowboy Grub just to name a few. Once you try their delicious items, we know you will come back for more!</p>
@@ -151,7 +151,7 @@
             </ul>
         </div>
     </section>
-    <section class="blog">
+    <section class="blog" id="blog">
         <h5>Amalie's blog</h5>
         <h3>Our Latest News</h3>
         <div id="blogsnippets">
@@ -190,16 +190,18 @@
             </ul>
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <h5>Keep in touch</h5>
         <h3>Send a Message</h3>
-        <form>
-            <form-item>Your surname</form-item>
-            <form-item>Your email address</form-item>
-            <form-item>Phone number</form-item>
-            <form-item>Your message</form-item>
-            <submit>Send Email</submit>
-        </form>
+        <div class="form">
+            <form>
+                <input type="text" name="sname" placeholder="Your Surname" />
+                <input type="email" name="email" placeholder="Your Email" />
+                <input type="phone" name="phone" placeholder="Your Phone #" />
+                <textarea placeholder="Your Message Here"></textarea>
+                <input value="Send" />
+            </form>
+        </div>
     </section>
     <section class="location">
         <!--this uses a bgimg-->
