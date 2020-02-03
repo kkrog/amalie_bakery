@@ -446,7 +446,9 @@ header h5 {
 .blogsnippets {
     display: flex;
     justify-content: left;
-    width: 20rem;
+    min-width: 20rem;
+    max-width: 30rem;
+    margin-top: 1rem;
 }
 .blogsnippets .month {
     color: rgb(24,24,24);
@@ -496,7 +498,22 @@ header h5 {
 .artsnip a:hover{
     color: orange;
 }
-
+#blogroll ul{
+    opacity: .5;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 3rem;
+}
+#blogroll img {
+    height: 7rem;
+    opacity: .65;
+    padding: 0 1rem;
+}
+.inners {
+    border-left: .5px solid rgb(24,24,24);
+    opacity: .65;
+}
 
 /*breakpoint for hero width 772px*/
 /*benefits p hide under ___ wide and click reveal*/
