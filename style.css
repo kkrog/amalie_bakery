@@ -574,7 +574,6 @@ header h5 {
     background-color: rgba(24,24,24,0.6);
     background-blend-mode: darken;
     text-align: left;
-    padding-left: 10%;
     width: 100%;
     min-height: 500px;
     display: flex;
@@ -583,12 +582,11 @@ header h5 {
 }
 .location #location {
     width: 45%;
+    padding-left: 10%;
 }
 .location #mapwrap {
-    width: 45%;
-}
-#mapwrap iframe {
-    vertical-align: bottom;
+    width: 40%;
+    align-self: center;
 }
 .location h5 {
     color: orange;
@@ -623,6 +621,52 @@ header h5 {
     font-weight: 600;
     color: rgba(255,255,255,1);
 }
+.subscribe {
+    background-image: url("./img/new/pastrysplash.jpg");
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgb(239,243,244);
+    background-blend-mode: darken;
+}
+.subscribe h6 {
+    text-transform: capitalize;
+    font-size: .8rem;
+    font-weight: 300;
+    letter-spacing: .1rem;
+    color: rgba(24,24,24,0.6);
+}
+.subscribe h4 {
+    font-family: 'Tangerine',cursive;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 1;
+    color: rgb(24,24,24);
+    padding-top: 3rem;
+}
+.subscribe form {
+    margin: 1.5rem auto;
+}
+.ownerquote {
+    background-color: rgba(24,24,24,.1);
+    color: rgb(24,24,24);
+    padding: 1rem 0;
+    margin: 2rem 0 3rem 0;
+}
+.spacer {
+    padding-bottom: 1rem;
+}
+.ownerquote h6 {
+    text-transform: none;
+    font-weight: 500;
+}
+.ownerquote span {
+    color: orange;
+}
+
+
+
+
 /*breakpoint for hero width 772px*/
 /*benefits p hide under ___ wide and click reveal*/
 @media only screen and (max-width:1267px) {
@@ -652,7 +696,7 @@ header h5 {
         background-blend-mode: lighten;
         box-shadow: 0 .2rem .4rem rgb(32,41,46);
     }
-    #ad h5,h4,h3 {
+    #ad h5 h4 h3 {
         margin-left: 30%;
     }
 }
@@ -666,5 +710,16 @@ header h5 {
         background-color: rgb(32,41,46);
         background-image: none;
         box-shadow: 0 .2rem .4rem rgb(32,41,46);
+    }
+    .subscribe {
+        background-image: url("./img/new/pastrysplash.jpg");
+        background-position: left;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: rgba(239,243,244,.7);
+        background-blend-mode: overlay;
+    }
+    .subscribe h6 {
+        color: rgb(24,24,24);
     }
 }
