@@ -624,7 +624,7 @@ header h5 {
     background-blend-mode: darken;
 }
 .subscribe h6 {
-    text-transform: capitalize;
+    text-transform: uppercase;
     font-size: .8rem;
     font-weight: 300;
     letter-spacing: .1rem;
@@ -663,6 +663,8 @@ header h5 {
     border-bottom: .8px solid rgba(24,24,24,0.6);
     text-align: left;
     color: rgb(24,24,24);
+    padding-bottom: 2rem;
+    margin: 1rem 0px;
 }
 #locationblurb figure {
     display: flex;
@@ -699,6 +701,9 @@ header h5 {
     text-decoration: none;
     color: rgb(24,24,24)
 }
+.linkbank p {
+    padding-bottom: 1rem;
+}
 .llbb i {
     color: orange;
     vertical-align: -.4rem;
@@ -708,6 +713,9 @@ header h5 {
 }
 #locationblurb {
     max-width: 30%;
+}
+#locationblurb ul {
+    line-height: 2;
 }
 #centerlinkgroup i {
     border: 2px solid rgb(135,166,34);
@@ -726,15 +734,33 @@ header h5 {
     justify-content: space-around;
     align-items: flex-start
 }
+#centerlinkgroup,#rightlinkgroup {
+    margin-top: 1rem;
+}
+#centerlinkgroup h5,#rightlinkgroup h5{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+}
 #cl1,#cl2 {
     min-width: 10rem;
+}
+#insta {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template: repeat(2,1fr)/repeat(3,1fr);
+    margin-top: 1rem;
+}
+#insta img {
+    max-width: 5rem;
+    border-radius: 10%;
 }
 
 
 
-
-
-
+/*icons in offerings breaking at small*/
+/*pics in offerings not scaling*/
 /*breakpoint for hero width 772px*/
 /*benefits p hide under ___ wide and click reveal*/
 @media only screen and (max-width:1267px) {
