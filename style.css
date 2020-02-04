@@ -660,6 +660,7 @@ header h5 {
 #linkbank {
     display: flex;
     justify-content: space-evenly;
+    flex-flow: row wrap;
     border-bottom: .8px solid rgba(24,24,24,0.6);
     text-align: left;
     color: rgb(24,24,24);
@@ -756,7 +757,30 @@ header h5 {
     max-width: 5rem;
     border-radius: 10%;
 }
-
+#copyright {
+    float: left;
+    color: rgb(24,24,24);
+    font-size: .75rem;
+    font-weight:500;
+    line-height: 2;
+}
+#copyright span {
+    color: orange;
+}
+#copyright i {
+    color: red;
+    font-size: .75rem;
+}
+#footlinks {
+    float: right;
+    font-size: .75rem;
+}
+#footlinks a {
+    margin: 0 .5rem;
+    text-decoration: none;
+    color: rgba(24,24,24,0.6);
+    line-height: 2;
+}
 
 
 /*icons in offerings breaking at small*/
