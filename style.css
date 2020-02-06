@@ -97,7 +97,7 @@ header h5 {
     line-height: 1;
 }
 .topnav {
-    text-transform: small-caps;
+    text-transform: uppercase;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -126,7 +126,7 @@ header h5 {
     color: orange;
 }
 .altnav {
-    visibility: hidden;;
+    display:none;
 }
 /*media q below for hamburger*/
 .hero {
@@ -851,12 +851,17 @@ header h5 {
         color: rgb(24,24,24);
     }
 }
+@media only screen and (max-width: 600px) {
+    .hero p {
+        background-color: rgba(24,24,24,0.6);
+    }
+}
 @media only screen and (max-width: 500px) {
     .topmainnav {
         visibility: hidden;
     }
     .altnav {
-        visibility: visible;
+        display: block;
     }
     #toggle {
         display: block;
@@ -865,30 +870,32 @@ header h5 {
     }
     #toggle input {
         display: block;
-        width: 1.5rem;
-        height: 1.5rem;
+        width: 2.75rem;
+        height: 2.75rem;
         position: absolute;
         opacity: 0;
         z-index: 102;
     }
     #toggle i {
         display: block;
-        font-size: 1.5rem;
+        font-size: 2.75rem;
         position: relative;
         z-index: 1;
     }
     #altmainnav {
         position: absolute;
-        width: 75vw;
-        background:#000;
         list-style-type: none;
-        transform: translate(-100%,0);
-        transition: transform 0.5s ease;
+        transform: translate(0%,-150%);
+        transition: transform 0.35s ease;
+        padding-top: 1.5rem;
+        right: 1.5rem;
+        text-align: right;
     }
     #altmainnav a {
         text-decoration: none;
         transition: color 0.5s ease;
         padding: 1rem 0;
+        color: #fff;
     }
     #altmainnav a:hover {
         color: orange;
