@@ -153,7 +153,6 @@ header h5 {
     font-family: 'Tangerine','cursive';
     font-weight: lighter;
 }
-/*maybe put back satisfy*/
 .hero p {
     max-width: 45%;
     margin: 2rem auto;
@@ -179,10 +178,11 @@ header h5 {
     padding: 3rem 0px;
 }
 .specials {
-    width: 570px;
-    height: 350px;
+    width: 45%;
+    height: auto;
     line-height: 1.5;
     margin: 1rem 0;
+    padding: 0px 1rem 2rem 1rem;
 }
 #monthlyspcl {
     background-color: rgba(255,255,255,.75);
@@ -200,7 +200,7 @@ header h5 {
 }
 .specials h4 {
     font-size: 2.5rem;
-    margin-top: 3.5rem;
+    margin-top: 1.5rem;
     font-weight:300;
     font-style: italic;
 }
@@ -257,6 +257,11 @@ header h5 {
 }
 .benefits img {
     margin: 0.5rem auto;
+    max-width: 40%;
+    min-width: 2rem;
+}
+.benefitaltwrap {
+    display: none;
 }
 .offerings{
     display: flex;
@@ -854,6 +859,40 @@ header h5 {
 @media only screen and (max-width: 600px) {
     .hero p {
         background-color: rgba(24,24,24,0.6);
+    }
+    .specials {
+        width: 90%;
+    }
+    .bpmain {
+        display: none;
+    }
+    .benefitaltwrap {
+        display: block;
+    }
+    .benehide {
+        display: none;
+    }
+    .toglbl {
+        display: block;
+        cursor: pointer;
+        transition: all 0.3s ease-out;
+    }
+    .toglbl:hover {
+        color: orange;
+    }
+    .toglbl::before{
+        content: ' ';
+        display: inline-block;
+        vertical-align: middle;
+        transition: transform 0.2s ease-out;
+    }
+    .collapse-content {
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+    .benehide:checked + .toglbl + .collapse-content {
+        max-height: 90%;
     }
 }
 @media only screen and (max-width: 500px) {
