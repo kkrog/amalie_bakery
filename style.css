@@ -107,6 +107,9 @@ header h5 {
     display:inline-block;
     margin:0 0.25rem;
 }
+.topmainnav {
+    visibility: visible;
+}
 .topmainnav a {
     text-decoration: none;
     color: #fff;
@@ -122,6 +125,10 @@ header h5 {
 .topshopnav i:hover {
     color: orange;
 }
+.altnav {
+    visibility: hidden;;
+}
+/*media q below for hamburger*/
 .hero {
     top: 5rem;
     width: 100%;
@@ -842,5 +849,51 @@ header h5 {
     }
     .subscribe h6 {
         color: rgb(24,24,24);
+    }
+}
+@media only screen and (max-width: 500px) {
+    .topmainnav {
+        visibility: hidden;
+    }
+    .altnav {
+        visibility: visible;
+    }
+    #toggle {
+        display: block;
+        position: relative;
+        z-index: 101;
+    }
+    #toggle input {
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+        position: absolute;
+        opacity: 0;
+        z-index: 102;
+    }
+    #toggle i {
+        display: block;
+        font-size: 1.5rem;
+        position: relative;
+        z-index: 1;
+    }
+    #altmainnav {
+        position: absolute;
+        width: 75vw;
+        background:#000;
+        list-style-type: none;
+        transform: translate(-100%,0);
+        transition: transform 0.5s ease;
+    }
+    #altmainnav a {
+        text-decoration: none;
+        transition: color 0.5s ease;
+        padding: 1rem 0;
+    }
+    #altmainnav a:hover {
+        color: orange;
+    }
+    #toggle input:checked ~ ul {
+        transform: none;
     }
 }
